@@ -1,7 +1,7 @@
 BSG Anagrams Code Assignment
 ============================
 
-[![Build Status](https://travis-ci.org/nieldw/Anagrams.svg)](https://travis-ci.org/nieldw/Anagrams)
+[![Build Status](https://travis-ci.org/BSG-Africa/anagram.svg?branch=master)](https://travis-ci.org/BSG-Africa/anagram)
 
 As part of our recruitment process, to help us to understand your level of proficiency we would like you to complete a 
 simple programming assignment. Your code to solve this assignment should be in a 'production-ready' state, i.e. it 
