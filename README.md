@@ -29,8 +29,8 @@ For example: (Please note that these are not the correct outputs, but demonstrat
 > For words '11' characters long there are ' 3' anagrams.  
 > .  
 > .  
-> For words ' 7' characters long there are ' 2' anagrams.
-> For words ' 6' characters long there are ' 5' anagrams.
+> For words ' 7' characters long there are ' 2' anagrams.  
+> For words ' 6' characters long there are ' 5' anagrams.  
 > .  
 > For words ' 3' characters long there are '15' anagrams.  
 
