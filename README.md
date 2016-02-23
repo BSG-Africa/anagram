@@ -3,28 +3,34 @@ BSG Anagrams Code Assignment
 
 [![Build Status](https://travis-ci.org/BSG-Africa/anagram.svg?branch=master)](https://travis-ci.org/BSG-Africa/anagram)
 
-As part of our recruitment process, to help us to understand your level of proficiency we would like you to complete a 
+As part of our recruitment process, to help us to understand your level of proficiency, we would like you to complete a 
 simple programming assignment. Your code to solve this assignment should be in a 'production-ready' state, i.e. it 
-should be suitable for committing to a production codebase for an application that has an indefinite lifespan. This code
-also needs to be easily maintainable by a team of developers over the application's lifespan. Unit tests are especially
+should be suitable for committing to a production codebase for an application that has an indefinite lifespan. This code 
+also needs to be easily maintainable by a team of developers over the application's lifespan. Unit tests are especially 
 useful to drive the design of your solution (TDD) and to ensure it is maintainable. Therefore you should include any 
-automated tests that you may create in your submission. Following good naming conventions also support maintainability.
+automated tests that you may create in your submission. Following good naming conventions also supports maintainability.
 
 Instructions
 ------------
 
-This assignment requires you to write a small java application that reads in the English dictionary (included in the
+This assignment requires you to write a small Java application that reads the English dictionary (included in the 
 resources directory) and calculates the number of anagrams that exist for each word length. As an example ‘friend’, 
-‘refind’, ‘finder’ would count as 3, whereas ‘monster’ and ‘mentors’ would count as 2, etc. The output should show how 
-many matches occurred per word length, so using the above example, the 6 letter words would have 3 and the 7 letter 
-words would have 2. The output of the application should be the word length and number of anagrams in the dictionary for
-words of that length. The output should be ordered by word length in descending order.
+‘refind’, ‘finder’ would count as 3, and ‘monster’ and ‘mentors’ would count as 2. The output should show how many 
+matches occurred per word length, so using the above example, the 6 letter words would have 3 and the 7 letter words 
+would have 2. If there were an additional 6 letter word, for example ‘return’, but no anagram of this word, then the 
+result would remain 3 anagrams for 6 letter words. However, if we also included the word ‘turner’, which is an anagram 
+of ‘return’, the result would now be 5 anagrams for 6 letter words.
+
+The output of the application should be the word length and number of anagrams in the dictionary for words of that 
+length. The output should be ordered by word length in descending order.
  
 For example: (Please note that these are not the correct outputs, but demonstrates the correct format.)
 > For words '12' characters long there are ' 2' anagrams.  
 > For words '11' characters long there are ' 3' anagrams.  
 > .  
 > .  
+> For words ' 7' characters long there are ' 2' anagrams.
+> For words ' 6' characters long there are ' 5' anagrams.
 > .  
 > For words ' 3' characters long there are '15' anagrams.  
 
@@ -34,7 +40,7 @@ dictionary file and return a list of strings, `AnagramCounter`, which must deter
 word length, and `AnagramPrinter`, which is responsible for printing the output to `System.out`.
 Provide your implementations to the `AnagramCalculator` instantiated in `Main`. All of these classes can be found 
 already in the `src\main\java` directory. You are free to design each implementation as you choose, and may use as many
-or few collaborating classes as you choose. You are encouraged to include unit tests.
+or few collaborating classes as you choose.
 
 The project is built using Maven and already includes the dependencies for `junit` and `mockito`. You may add any other
 dependencies you require.
